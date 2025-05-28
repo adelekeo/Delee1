@@ -1,0 +1,10 @@
+image: mcr.microsoft.com/dotnet/sdk:8.0
+
+tasks:
+  - name: Setup .NET
+    init: dotnet --version
+    command: bash
+
+ports:
+  - port: 5000
+    onOpen: open-preview
